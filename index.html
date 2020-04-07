@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Coviz">
 <meta property="og:title" content="Coviz">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="https://covidvis.github.io/">
 
 
   <meta property="og:description" content="Visualizing SARS-CoV-2 trends with overlaid countermeasures. ">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="https://covidvis.github.io/">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": "",
-      "url": "http://localhost:4000/"
+      "url": "https://covidvis.github.io/"
     
   }
 </script>
@@ -103,7 +103,11 @@
   
     <script src="/scripts/jhu_country.js"></script>
   
+    <script src="/scripts/jhu_country_death.js"></script>
+  
     <script src="/scripts/jhu_state.js"></script>
+  
+    <script src="/scripts/jhu_state_death.js"></script>
   
 
 
@@ -192,21 +196,41 @@
 
     <div class="tab">
         <input type="radio" id="tab-1" name="tab-group-1" checked="" />
-        <label for="tab-1">World</label>
+        <label for="tab-1">World: Cases</label>
 
         <div class="tab-content">
             <h2 class="centered">Country Trends</h2>
             <div id="country_vis"></div>
         </div>
     </div>
-
+    
     <div class="tab">
         <input type="radio" id="tab-2" name="tab-group-1" />
-        <label for="tab-2">USA</label>
+        <label for="tab-2">World: Deaths</label>
+
+        <div class="tab-content">
+            <h2 class="centered">Country Trends</h2>
+            <div id="country_death_vis"></div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <input type="radio" id="tab-3" name="tab-group-1" />
+        <label for="tab-3">USA: Cases</label>
 
         <div class="tab-content">
             <h2 class="centered">State Trends</h2>
             <div id="state_vis"></div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <input type="radio" id="tab-4" name="tab-group-1" />
+        <label for="tab-4">USA: Deaths</label>
+
+        <div class="tab-content">
+            <h2 class="centered">State Trends</h2>
+            <div id="state_death_vis"></div>
         </div>
     </div>
 
