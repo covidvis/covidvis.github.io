@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="">
-<meta property="og:url" content="https://covidvis.github.io/">
+<meta property="og:url" content="http://localhost:4000/">
 
 
   <meta property="og:description" content="Visualizing SARS-CoV-2 trends with overlaid countermeasures. ">
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="https://covidvis.github.io/">
+<link rel="canonical" href="http://localhost:4000/">
 
 
 
@@ -54,7 +54,7 @@
     
       "@type": "Person",
       "name": "",
-      "url": "https://covidvis.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -202,8 +202,8 @@
 <p>The rapid spread of <a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019">SARS-CoV-2</a> has led many countries and regions to enact various <a href="https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic">interventions</a>, 
 such as social distancing, school closures, and border control, 
 in order to mitigate the growth of infection. Understanding the effects
-of these policies is particularly important since every intervention strategy comes with its side effects.
-We wanted to understand the impact of strategies and their combinations on the disease spread.
+of these interventions is particularly important since each strategy comes with its side effects.
+We wanted to understand the impact of intervention strategies and their combinations on the disease spread.
 After collecting data at the country and state levels for certain types of interventions, we overlaid
 them on the disease growth curves, shown below.</p>
 
@@ -264,7 +264,7 @@ We overlaid our trends with various countermeasures
 taken by the governing entities. 
 We invite the reader to reveal
 such measures on a per-region basis
-in the chart by clicking the legend, 
+in the chart by clicking the legend (recommended), 
 the dropdown below the chart, or the chart itself.
 </p>
 
@@ -283,10 +283,10 @@ declaration of a lockdown.
 <p>
 To visualize the impact of these lockdowns,
 we also plot a
-projection line for the original trajectory 
+projection line for the <b>original trajectory</b> 
 of the trend before the lockdown date. 
 The projection extrapolates the
-growth curve based on the slope computed up until the lockdown date. 
+growth based on the slope computed up until the lockdown date. 
 This projection is based on the simple
 assumption that the growth rate stays fixed 
 throughout the entire period of time, 
@@ -295,9 +295,11 @@ assumption for a number of reasons.
 For example, as the number of infected individuals increases, the
 <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">
 growth will likely slow down</a>
-due to the growing number of recovered people with immunity. 
+due to the increasing number of 
+recovered people with immunity. 
 Nevertheless, this serves as one comparison point that
-we can use to understand the effects of these interventions in slowing the infection rates.
+we can use to understand the effects of 
+interventions in slowing the infection rates.
 </p>
 
 <h2 id="faqs">FAQs</h2>
@@ -312,9 +314,11 @@ other confounding variables, such as the amount and availability of tests.
 We will be keeping the dashboard up-to-date with
 the latest data to see how these trends unfold.</p>
 
-<p>Another drawback is that our extrapolation (labeled as original trajectory in the visualization) 
+<p>Another drawback is that our extrapolation 
+(labeled as original trajectory in the visualization) 
 is easy-to-understand but simplistic: other more
-sophisticated models exist, but our intent is not prediction, but rather provide a visual cue
+sophisticated models exist. 
+That said, our intent is not prediction, but rather provide a visual cue
 to study the differences before and after the intervention.</p>
 
 <p>Finally, we must mention that aggregate patterns and trends often obscure individual datapoints and outliers. Visualizing data on a logarithmic scale, while making it easier to visualize 
@@ -361,7 +365,7 @@ of the intervention, and then extending that post the intervention.</p>
 <a href="https://pandas.pydata.org/">Pandas</a> for data processing, and <a href="https://jupyter.org/">Jupyter</a> for sharing code and visualizations.</p>
 
 <h2 id="team">Team</h2>
-<p>Covidvis is a collaborative effort across epidemiology, public health, and visualization researchers at UC Berkeley (<a href="https://eecs.berkeley.edu/">EECS</a>, <a href="https://www.ischool.berkeley.edu/">School of Information</a>, and <a href="https://publichealth.berkeley.edu/">School of Public Health</a>), University of Illinois (<a href="https://www.cs.illinois.edu/">Computer Science</a>), and Georgia Tech (<a href="https://cse.gatech.edu/">Computational Science and Engineering</a>).</p>
+<p>Covidvis is a collaborative effort across computational epidemiology, public health, and visualization researchers at UC Berkeley (<a href="https://eecs.berkeley.edu/">EECS</a>, <a href="https://www.ischool.berkeley.edu/">School of Information</a>, and <a href="https://publichealth.berkeley.edu/">School of Public Health</a>), University of Illinois (<a href="https://www.cs.illinois.edu/">Computer Science</a>), and Georgia Tech (<a href="https://cse.gatech.edu/">Computational Science and Engineering</a>).</p>
 
 <p>From the visualization side, the team includes <a href="http://dorisjunglinlee.com/">Doris Jung-Lin Lee</a> (UC Berkeley School of Information); <a href="https://smacke.net/">Stephen Macke</a> (University of Illinois Computer Science and UC Berkeley EECS); <a href="https://tichung.com/">Ti-Chung Cheng</a>, <a href="https://www.linkedin.com/in/tanawattanawaroon/">Tana Wattanawaroon</a>, and Pingjing Yang (University of Illinois Computer Science); and <a href="https://people.eecs.berkeley.edu/~adityagp/">Aditya Parameswaran</a> (UC Berkeley School of Information and EECS).</p>
 
