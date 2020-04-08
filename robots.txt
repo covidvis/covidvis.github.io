@@ -1,0 +1,1 @@
+Sitemap: https://covidvis.github.io/sitemap.xml
