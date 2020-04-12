@@ -2,10 +2,14 @@
 function startVegaEmbedding() {
   var embedOpt = {"mode": "vega-lite"};
   $(document).ready(function() {
-    vegaEmbed("#country_vis", jhu_country, embedOpt);
-    vegaEmbed("#country_death_vis", jhu_country_death, embedOpt);
-    vegaEmbed("#state_vis", jhu_state, embedOpt);
-    vegaEmbed("#state_death_vis", jhu_state_death, embedOpt);
+    vegaEmbed("#jhu_world_cases", jhu_world_cases, embedOpt);
+    vegaEmbed("#jhu_world_deaths", jhu_world_deaths, embedOpt);
+    vegaEmbed("#jhu_us_cases", jhu_us_cases, embedOpt);
+    vegaEmbed("#jhu_us_deaths", jhu_us_deaths, embedOpt);
+    vegaEmbed("#jhu_world_cases_mobile", jhu_world_cases_mobile, embedOpt);
+    vegaEmbed("#jhu_world_deaths_mobile", jhu_world_deaths_mobile, embedOpt);
+    vegaEmbed("#jhu_us_cases_mobile", jhu_us_cases_mobile, embedOpt);
+    vegaEmbed("#jhu_us_deaths_mobile", jhu_us_deaths_mobile, embedOpt);
   });
 };
     

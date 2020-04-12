@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="">
-<meta property="og:url" content="https://covidvis.github.io/">
+<meta property="og:url" content="https://covidvis.github.io/covidvis-staging//covidvis-staging/">
 
 
   <meta property="og:description" content="Visualizing SARS-CoV-2 trends with overlaid countermeasures. ">
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="https://covidvis.github.io/">
+<link rel="canonical" href="https://covidvis.github.io/covidvis-staging//covidvis-staging/">
 
 
 
@@ -54,7 +54,7 @@
     
       "@type": "Person",
       "name": "",
-      "url": "https://covidvis.github.io/"
+      "url": "https://covidvis.github.io/covidvis-staging//covidvis-staging/"
     
   }
 </script>
@@ -67,9 +67,6 @@
 <!-- end _includes/seo.html -->
 
 
-
-
-
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -78,7 +75,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/covidvis-staging/assets/css/main.css">
 
 <!--[if IE]>
   <style>
@@ -99,9 +96,9 @@
   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   
-    <script src="/js/autogen/vega_embed.js"></script>
+    <script src="/covidvis-staging/js/autogen/vega_embed.js"></script>
   
-    <script src="/js/load_fonts.js"></script>
+    <script src="/covidvis-staging/js/load_fonts.js"></script>
   
     <script src="http://www.google.com/jsapi"></script>
   
@@ -145,18 +142,18 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/logo.png" alt=""></a>
+          <a class="site-logo" href="/covidvis-staging/"><img src="/covidvis-staging/assets/logo.png" alt=""></a>
         
-        <a class="site-title" href="/">
+        <a class="site-title" href="/covidvis-staging/">
           
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/#lockdown_section">Lockdown Effects</a>
+              <a href="/covidvis-staging/#lockdown_section">Lockdown Effects</a>
             </li><li class="masthead__menu-item">
-              <a href="/#faqs">FAQs</a>
+              <a href="/covidvis-staging/#faqs">FAQs</a>
             </li><li class="masthead__menu-item">
-              <a href="/#team">Team</a>
+              <a href="/covidvis-staging/#team">Team</a>
             </li><li class="masthead__menu-item">
               <a href="https://github.com/covidvis/covid19-vis">Source</a>
             </li></ul>
@@ -223,15 +220,23 @@ them on the disease growth curves, shown below.</p>
 </div>
 
 <div class="tab-content tab-content-world" id="world-tab">
-
-    <div class="tab-content tab-content-cases" id="country_vis"></div>
-    <div class="tab-content tab-content-deaths" id="country_death_vis"></div>
+    <div class="tab-content tab-content-cases" id="jhu_world_cases"></div>
+    <div class="tab-content tab-content-deaths" id="jhu_world_deaths"></div>
 </div>
 
 <div class="tab-content tab-content-usa" id="usa-tab">
+    <div class="tab-content tab-content-cases" id="jhu_us_cases"></div>
+    <div class="tab-content tab-content-deaths" id="jhu_us_deaths"></div>
+</div>
 
-    <div class="tab-content tab-content-cases" id="state_vis"></div>
-    <div class="tab-content tab-content-deaths" id="state_death_vis"></div>
+<div class="tab-content tab-content-world-mobile" id="world-tab-mobile">
+    <div class="tab-content tab-content-cases-mobile" id="jhu_world_cases_mobile"></div>
+    <div class="tab-content tab-content-deaths-mobile" id="jhu_world_deaths_mobile"></div>
+</div>
+
+<div class="tab-content tab-content-usa-mobile" id="usa-tab-mobile">
+    <div class="tab-content tab-content-cases-mobile" id="jhu_us_cases_mobile"></div>
+    <div class="tab-content tab-content-deaths-mobile" id="jhu_us_deaths_mobile"></div>
 </div>
 </div>
 
@@ -423,22 +428,35 @@ of the intervention, and then extending that post the intervention.</p>
   gtag('config', 'UA-163087607-1');
 </script>
 
-<div class="page__footer-copyright">&copy; 2020 The Covidvis team. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">
+  &copy; 2020 The Covidvis team.
+  Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp;
+  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+  Last modified April 12, 2020.
+</div>
 
       </footer>
     </div>
 
     
   
-    <script src="/js/chart_ui.js"></script>
+    <script src="/covidvis-staging/js/chart_ui.js"></script>
   
-    <script src="/js/autogen/jhu_country.js"></script>
+    <script src="/covidvis-staging/js/autogen/jhu_world_cases.js"></script>
   
-    <script src="/js/autogen/jhu_country_death.js"></script>
+    <script src="/covidvis-staging/js/autogen/jhu_world_deaths.js"></script>
   
-    <script src="/js/autogen/jhu_state.js"></script>
+    <script src="/covidvis-staging/js/autogen/jhu_us_cases.js"></script>
   
-    <script src="/js/autogen/jhu_state_death.js"></script>
+    <script src="/covidvis-staging/js/autogen/jhu_us_deaths.js"></script>
+  
+    <script src="/covidvis-staging/js/autogen/jhu_world_cases_mobile.js"></script>
+  
+    <script src="/covidvis-staging/js/autogen/jhu_world_deaths_mobile.js"></script>
+  
+    <script src="/covidvis-staging/js/autogen/jhu_us_cases_mobile.js"></script>
+  
+    <script src="/covidvis-staging/js/autogen/jhu_us_deaths_mobile.js"></script>
   
 
 
