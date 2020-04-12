@@ -1,1 +1,1 @@
-Sitemap: https://covidvis.github.io/covidvis-staging//covidvis-staging/sitemap.xml
+Sitemap: https://covidvis.github.io/sitemap.xml
