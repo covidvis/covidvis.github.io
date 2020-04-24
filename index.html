@@ -219,7 +219,7 @@ them on the disease growth curves, shown below.</p>
 <div class="tab">
 <span class="button-group">
   <button class="button-left tablinks default-open" onclick="openTabs(event, '.tab-content-world')">World</button>
-  <button class="button-right tablinks" onclick="openTabs(event, '.tab-content-usa')">USA</button>
+  <button class="button-right tablinks" onclick="openTabs(event, '.tab-content-usa');populateInfoPages('jhu_us_cases');populateInfoPages('jhu_us_deaths')">USA</button>
 </span>
 <span style="width: 5px; float: left;">&nbsp;</span>
 <span class="button-group">
@@ -443,7 +443,7 @@ of the intervention, and then extending that post the intervention.</p>
   &copy; 2020 The Covidvis team.
   Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp;
   <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
-  Last modified April 23, 2020.
+  Last modified April 24, 2020.
 </div>
 
       </footer>
@@ -452,6 +452,10 @@ of the intervention, and then extending that post the intervention.</p>
     
   
     <script src="/js/chart_ui.js"></script>
+  
+    <script src="/js/chart_text.js"></script>
+  
+    <script src="/js/autogen/us_state_details.js"></script>
   
     <script src="/js/autogen/jhu_world_cases.js"></script>
   
