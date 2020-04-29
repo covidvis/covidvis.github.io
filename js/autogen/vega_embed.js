@@ -14,18 +14,10 @@ vegaEmbed("#jhu_world_deaths", jhu_world_deaths, embedOpt).then(function(chart) 
 vegaEmbed("#jhu_us_cases", jhu_us_cases, embedOpt).then(function(chart) {
     COVIDVIS_CHARTS['jhu_us_cases'] = chart;
     
-    var handler = makePopulateInfoPageSpaceHandler('jhu_us_cases');
-    chart.view.addSignalListener('click', handler);
-    handler('click', chart.view.signal('click'));
-
 });
 vegaEmbed("#jhu_us_deaths", jhu_us_deaths, embedOpt).then(function(chart) {
     COVIDVIS_CHARTS['jhu_us_deaths'] = chart;
     
-    var handler = makePopulateInfoPageSpaceHandler('jhu_us_deaths');
-    chart.view.addSignalListener('click', handler);
-    handler('click', chart.view.signal('click'));
-
 });
 vegaEmbed("#jhu_world_cases_mobile", jhu_world_cases_mobile, embedOpt).then(function(chart) {
     COVIDVIS_CHARTS['jhu_world_cases_mobile'] = chart;
