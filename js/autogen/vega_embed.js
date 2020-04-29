@@ -44,5 +44,5 @@ vegaEmbed("#jhu_us_deaths_mobile", jhu_us_deaths_mobile, embedOpt).then(function
     
 });
   });
-};
+}
     
